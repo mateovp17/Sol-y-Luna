@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sol y Luna - Restaurante Peruano</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="galeria/ICO.svg">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo-text">
+        <img src="/galeria/Sol y Luna.png" alt="Sol y Luna" class="logo">
+        <div>
+          <h1>Sol y Luna</h1>
+          <p class="subtitulo">Restaurante peruano </p>
+        </div>
+      </div>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre">Sobre nosotros</a>
+        <a href="#carta">Carta</a>
+        <a href="#galeria">Galería</a>
+        <a href="#comandas">Comandas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+      <div>
+        <h2>Restaurante Peruano Artesanal</h2>
+        <p>Disfruta de platos tradicionales peruanos preparados con ingredientes frescos y locales.</p>
+        <a href="#comandas" class="btn btn-primary">PEDIDOS ONLINE</a>
+        <a href="#carta" class="btn btn-secondary">VER CARTA</a>
+      </div>
+      <img src="/galeria/Ceviche.png" alt="Platos Sol y Luna">
+    </section>
+
+    <!-- Sobre nosotros -->
+    <section id="sobre">
+      <h3 class="section-title">Sobre nosotros</h3>
+      <p>En Sol y Luna ofrecemos un ambiente acogedor con la mejor gastronomía peruana. Trabajamos con productores locales y recetas tradicionales adaptadas a un estilo moderno.</p>
+    </section>
+
+    <!-- Carta -->
+    <section id="carta">
+      <h3 class="section-title">Carta</h3>
+
+      <!-- Entrantes -->
+      <details>
+        <summary>Aperitivos </summary>
+        <div class="menu-group">
+          <div class="menu-item">
+            <div class="menu-info">
+              <h4>Mini tamales</h4>
+              <img src="galeria/Mini tamales.jpg" alt="Mini tamales" class="menu-img-producto">
+            </div>
+            <div class="menu-price">
+              8,00 € 
+              <button onclick="agregarAlCarrito('Minis tamales',8.0)">Agregar</button>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-info">
+              <h4>Minis papas rellenas</h4>
+              <img src="galeria/papa rellena.jpg" alt="Mini papa rellena" class="menu-img-producto">
+            </div>
+            <div class="menu-price">
+              7,00 €  
+              <button onclick="agregarAlCarrito('Minis papas rellenas',7.0)">Agregar</button>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-info">
+              <h4>Croquetas de ají de gallina</h4>
+              <img src="galeria/Croquetas.jpg" alt="Croquetas de ají de gallina" class="menu-img-producto">
+            </div>
+            <div class="menu-price">
+              7,00 €  
+              <button onclick="agregarAlCarrito('Croquetas de ají de gallina',7.0)">Agregar</button>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-info">
+              <h4>Mini pan con chicharrón</h4>
+              <img src="galeria/Pan con chicharrón.jpg" alt="Mini pan con chicharrón" class="menu-img-producto">
+            </div>
+            <div class="menu-price">
+              8,00 €  
+              <button onclick="agregarAlCarrito('Mini pan con chicharrón',8.0)">Agregar</button>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-info">
+              <h4>Chanfainita</h4>
+              <img src="galeria/Chanfainita.jpg" alt="Chanfainita" class="menu-img-producto">
+            </div>
+            <div class="menu-price">
+              7,00 €  
+              <button onclick="agregarAlCarrito('Chanfainita',7.0)">Agregar</button>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-info">
+              <h4>Anticuchos</h4>
+              <img src="galeria/Anticuchos.jpg" alt="Anticuchos" class="menu-img-producto">
+            </div>
+            <div class="menu-price">
+              9,00 €
+              <button onclick="agregarAlCarrito('Anticuchos',9.0)">Agregar</button>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- Primeros -->
+      <details>
+        <summary>Primeros</summary>
+        <div class="menu-group">
+          <div class="menu-item">
+            <div class="menu-info">
+              <h4>Ceviche</h4>
+              <img src="galeria/Ceviche.png" alt="Ceviche" class="menu-img-producto">
+            </div>
+            <div class="menu-price">
+              14,00 € 
+              <button onclick="agregarAlCarrito('Ceviche',14.0)">Agregar</button>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-info">
+              <h4>Ají de gallina</h4>
+              <img src="galeria/Ají de gallina.jpg" alt="Ají de gallina" class="menu-img-producto">
+            </div>
+            <div class="menu-price">
+              14,00 €  
+              <button onclick="agregarAlCarrito('Ají de gallina',14.0)">Agregar</button>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-info">
+              <h4>Arroz chaufa</h4>
+              <img src="galeria/Arroz chaufa.jpg" alt="Arroz chaufa" class="menu-img-producto">
+            </div>
+            <div class="menu-price">
+              13,00 €  
+              <button onclick="agregarAlCarrito('Arroz chaufa',13.0)">Agregar</button>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-info">
+              <h4>Papa a la huancaina</h4>
+              <img src="galeria/Papa a la huancaina.jpg" alt="Papa a la huancaina" class="menu-img-producto">
+            </div>
+            <div class="menu-price">
+              16,00 €  
+              <button onclick="agregarAlCarrito('Papa a la huancaina',16.0)">Agregar</button>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-info">
+              <h4>Sopa de gallina</h4>
+              <img src="galeria/Sopa de gallina.jpg" alt="Sopa de gallina" class="menu-img-producto">
+            </div>
+            <div class="menu-price">
+              15,00 €  
+              <button onclick="agregarAlCarrito('Sopa de gallina',15.0)">Agregar</button>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-info">
+              <h4>Causa limeña</h4>
+              <img src="galeria/Causa.jpg" alt="Causa limeña" class="menu-img-producto">
+            </div>
+            <div class="menu-price">
+              13,00 €  
+              <button onclick="agregarAlCarrito('Causa limeña',13.0)">Agregar</button>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- Segundos -->
+      <details>
+        <summary>Segundos</summary>
+        <div class="menu-group">
+          <div class="menu-item">
+            <div class="menu-info">
+              <h4>Lomo saltado</h4>
+              <img src="galeria/Lomo saltado.jpg" alt="Lomo saltado" class="menu-img-producto">
+            </div>
+            <div class="menu-price">
+              18,00 €  
+              <button onclick="agregarAlCarrito('Lomo saltado',18.0)">Agregar</button>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-info">
+              <h4>Seco de cabrito</h4>
+              <img src="galeria/Seco de cabrito.jpg" alt="Seco de cabrito" class="menu-img-producto">
+            </div>
+            <div class="menu-price">
+              19,00 €  
+              <button onclick="agregarAlCarrito('Seco de cabrito',19.0)">Agregar</button>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-info">
+              <h4>Pachamanca</h4>
+              <img src="galeria/Pachamanca.jpg" alt="Pachamanca" class="menu-img-producto">
+            </div>
+            <div class="menu-price">
+              20,00 €  
+              <button onclick="agregarAlCarrito('Pachamanca',20.0)">Agregar</button>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-info">
+              <h4>Tallarines verdes</h4>
+              <img src="galeria/Tallarines verdes.jpg" alt="Tallarines verdes" class="menu-img-producto">
+            </div>
+            <div class="menu-price">
+              16,00 €  
+              <button onclick="agregarAlCarrito('Tallarines verdes',16.0)">Agregar</button>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-info">
+              <h4>Tallarín salteado</h4>
+              <img src="galeria/Tallarin saltado.png" alt="Tallarín salteado" class="menu-img-producto">
+            </div>
+            <div class="menu-price">
+              17,00 €  
+              <button onclick="agregarAlCarrito('Tallarín salteado',17.0)">Agregar</button>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-info">
+              <h4>Arroz con pollo</h4>
+              <img src="galeria/Arroz con pollo.jpg" alt="Arroz con pollo" class="menu-img-producto">
+            </div>
+            <div class="menu-price">
+              15,00 €  
+              <button onclick="agregarAlCarrito('Arroz con pollo',15.0)">Agregar</button>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-info">
+              <h4>Mancha pecho</h4>
+              <img src="galeria/Mancha pecho.jpg" alt="Mancha pecho" class="menu-img-producto">
+            </div>
+            <div class="menu-price">
+              18,00 €  
+              <button onclick="agregarAlCarrito('Mancha pecho',18.0)">Agregar</button>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- Postres -->
+      <details>
+        <summary>Postres</summary>
+        <div class="menu-group">
+          <div class="menu-item">
+            <div class="menu-info">
+              <h4>Suspiro a la limeña</h4>
+              <img src="galeria/Suspiro a la limeña.jpg" alt="Suspiro a la limeña" class="menu-img-producto">
+            </div>
+            <div class="menu-price">
+              6,00 €  
+              <button onclick="agregarAlCarrito('Suspiro a la limeña',6.0)">Agregar</button>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-info">
+              <h4>Arroz con leche</h4>
+              <img src="galeria/Arroz con leche.jpg" alt="Arroz con leche" class="menu-img-producto">
+            </div>
+            <div class="menu-price">
+              5,00 €  
+              <button onclick="agregarAlCarrito('Arroz con leche',5.0)">Agregar</button>
+            </div>
+          </div>
+          <div class="menu-item"> 
+            <div class="menu-info">
+              <h4>Picarones</h4>
+              <img src="galeria/Picaronesç.jpg" alt="Picarones" class="menu-img-producto">
+            </div>
+            <div class="menu-price">
+              5,00 €  
+              <button onclick="agregarAlCarrito('Picarones',5.0)">Agregar</button>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-info">
+              <h4>Torta tres leches</h4>
+              <img src="galeria/Torta tres leches.jpg" alt="Torta tres leches" class="menu-img-producto">
+            </div>
+            <div class="menu-price">
+              6,00 €  
+              <button onclick="agregarAlCarrito('Torta tres leches',6.0)">Agregar</button>
+            </div>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <!-- Carrito de compras -->
+    <section id="comandas">
+      <h3 class="section-title">🛒 Tu carrito</h3>
+      <div id="carrito-lista"></div>
+      <h3 id="carrito-total">Total: €0.00</h3>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria">
+      <h3 class="section-title">Galería</h3>
+      <div class="gallery">
+        <img src="galeria/Ceviche.png" alt="Galería 1">
+        <img src="/images/photo2.jpg" alt="Galería 2">
+        <img src="/images/photo3.jpg" alt="Galería 3">
+        <img src="/images/photo4.jpg" alt="Galería 4">
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+      <h3 class="section-title">Contacto y ubicación</h3>
+      <p>Dirección: Calle Ficticia, 12, Ciudad Ejemplo</p>
+      <p>Teléfono: +34 600 000 000</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Sol y Luna — Hecho con cariño · Política de privacidad
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
