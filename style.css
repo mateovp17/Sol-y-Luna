@@ -7,8 +7,7 @@
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
-  background: url('/textures/peruvian-pattern.png') no-repeat center center fixed;
-  background-size: cover;
+  background-color: var(--cream);
   color: #5f3a3a;
 }
 
@@ -149,7 +148,7 @@ section {
   border-radius: 0.5rem;
 }
 
-.menu-item .price {
+.menu-price {
   min-width: 110px;
   text-align: right;
   font-weight: 600;
@@ -212,7 +211,7 @@ footer {
     align-items: flex-start;
   }
 
-  .menu-item .price {
+  .menu-price {
     text-align: left;
   }
 }
